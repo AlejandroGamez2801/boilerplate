@@ -10,7 +10,14 @@ class FrontController{
 		if(!$action){/** En caso de que no venga la accion*/
 			$action='index';
 		}
-		echo "Invocando la accion $action del controlador $controller";
+		
+		$controllerName = $controller.'Controller';
+		$pathController = "controllers/$controllerName.php";
+		
+		require $pathController;
+		$controller = new $controllerName;
+		$controller->$action();
+
 	}
 }
 ?>
