@@ -4,7 +4,8 @@ class IndexController{
 
 	}
 	public function index(){
-		echo "index action";
+		$view = new View('index.php');
+		echo $view->output();
 	}
 }
 ?>

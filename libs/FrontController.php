@@ -1,4 +1,6 @@
 <?php
+require('libs/View.php');
+
 class FrontController{
 	public static function main(){
 		$controller = $_GET['controller'];
