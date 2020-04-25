@@ -3,7 +3,10 @@
 require('libs/View.php');
 require('libs/Config.php');
 require('libs/Conexion.php');
+require('libs/Model.php');
 
+/** Mis modeloes */
+require 'models/UsuariosModel.php';
 
 class FrontController{
 	public static function main(){

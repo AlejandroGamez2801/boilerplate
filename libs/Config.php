@@ -3,7 +3,7 @@ class Config {
 	private $vars;
 	private static $instance;
 	
-	private static function __construct(){
+	private function __construct(){
 		$this->vars = array();
 	}
 	

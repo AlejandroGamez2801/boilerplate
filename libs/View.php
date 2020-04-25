@@ -2,8 +2,16 @@
 class View{
 	/** @var string*/
 	protected $pathView;
+	/** @var array */
+	protected $values;
+
 	public function __construct($viewName){
-		$this->pathView="views/$viewName";
+		$this->pathView = "views/$viewName";
+		$this->values = array();
+	}
+
+	public function set ($key, $value) {
+		$this->values[$key] = $value;
 	}
 	/**
 	* Renderiza la vista

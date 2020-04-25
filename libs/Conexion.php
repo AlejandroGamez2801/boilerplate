@@ -1,15 +1,17 @@
 <?php
+// error_reporting(0);
+error_reporting(~E_DEPRECATED);
 class Conexion {
 	private static $instance = null;
 	private $db = null;
 	
 	public function __construct () {
 		$config = Config::singleton();
-		$conexion = mysql_connect('127.0.0.1','root', '');
+		$conexion = mysql_connect('localhost','root', '');
 
 		mysql_query("set names utf8");
 
-		if(!conexion){
+		if(!$conexion){
 			echo "Error conectando a la base de datos.";
 			exit();
 		}
