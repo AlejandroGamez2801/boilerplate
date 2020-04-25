@@ -1,5 +1,9 @@
 <?php
+
 require('libs/View.php');
+require('libs/Config.php');
+require('libs/Conexion.php');
+
 
 class FrontController{
 	public static function main(){
