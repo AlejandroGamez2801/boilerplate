@@ -31,7 +31,7 @@ class Model {
         $propertiesClass = get_object_vars($this);
         foreach($propertiesClass as $property => $value){
             if(isset($properties[$property])){
-                $class = $property = $properties[$property];
+                $class->$property = $properties[$property];
             }
         }
 
