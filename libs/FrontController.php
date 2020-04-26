@@ -5,7 +5,7 @@ require('libs/Config.php');
 require('libs/Conexion.php');
 require('libs/Model.php');
 
-/** Mis modeloes */
+/** Mis modelos */
 require 'models/UsuariosModel.php';
 
 class FrontController{

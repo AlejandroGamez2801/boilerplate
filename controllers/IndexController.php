@@ -4,12 +4,17 @@ class IndexController{
 
 	}
 
-	public function index(){
-		// $view = new View('index.php');
-		
-		// echo $view->output();
-		$usuarios = new UsuariosModel();
-		echo json_encode($usuarios->all());
+	public function index () {
+		$Usuario = new UsuariosModel();
+		$usuarios = $Usuario->all();
+
+		$data['usuarios'] = $usuarios;
+		$fragmentoUsuarios = new View('usuarios.php');
+		$renderFragmentoUsuarios = $fragmentoUsuarios->output($data);
+
+		$view = new View('index.php');
+		$view->set('fragmentoUsuarios', $renderFragmentoUsuarios);
+		echo $view->output();		
 	}
 }
 ?>

@@ -19,7 +19,7 @@ class Config {
 		}
 	}
 	
-	public static function singleton (){
+	public static function singleton () {
 		if(!isset(self::$instance)){
 			$c = __CLASS__;
 			self::$instance = new $c;

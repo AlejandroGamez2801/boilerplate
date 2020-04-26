@@ -23,8 +23,9 @@ class Model {
         return $data;
     }
 
-    private function fetchClass ($properties){
+    private function fetchClass ($properties) {
         $class = $this->tableName."Model";
+        
         $class = new $class;
 
         $propertiesClass = get_object_vars($this);

@@ -1,5 +1,4 @@
 <?php
-// error_reporting(0);
 error_reporting(~E_DEPRECATED);
 class Conexion {
 	private static $instance = null;
