@@ -6,7 +6,7 @@ require('libs/Conexion.php');
 require('libs/Model.php');
 
 /** Mis modelos */
-require 'models/UsuariosModel.php';
+require 'models/ExampleModel.php';
 
 class FrontController{
 	public static function main(){

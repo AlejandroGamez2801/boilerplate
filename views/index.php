@@ -10,7 +10,7 @@
     <title>Index View</title>
 </head>
 <body>
-    <h1>Usuarios</h1>
-    [@fragmentoUsuarios]
+    <h1>Hello World!! MVC</h1>
+    
 </body>
 </html>
